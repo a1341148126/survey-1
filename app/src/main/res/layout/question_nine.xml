@@ -5,7 +5,89 @@
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="143dp"
+        android:layout_height="41dp"
+        android:text="       " />
 
+    <TextView
+        android:id="@+id/textView92"
+        android:layout_width="187dp"
+        android:layout_height="51dp"
+        android:text="  Question 9"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:text="     What characteristic do you think is most important to evaluate a phone?"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/q9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RadioButton
+        android:id="@+id/q91"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="Appearance" />
+
+    <RadioButton
+        android:id="@+id/q92"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="Price" />
+
+    <RadioButton
+        android:id="@+id/q93"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="Performance" />
+
+    <RadioButton
+        android:id="@+id/q94"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="Others" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_q9"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="100dp"
+        android:background="#009688"
+        android:text="Next"
+        android:textSize="30sp" />
 
     <!-- END    : Your code should be within this block -->
 

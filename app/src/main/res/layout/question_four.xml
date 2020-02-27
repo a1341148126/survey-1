@@ -5,8 +5,123 @@
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="143dp"
+        android:layout_height="41dp"
+        android:text="       " />
 
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="187dp"
+        android:layout_height="51dp"
+        android:text="  Question 4"
+        android:textSize="30sp"
+        android:textStyle="italic" />
 
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:text="     what functions dose your phone have now?"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/q4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+     <CheckBox
+        android:id="@+id/q41"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="Music functions" />
+
+     <CheckBox
+        android:id="@+id/q42"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="Photo functions" />
+
+    <CheckBox
+        android:id="@+id/q43"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="Game functions" />
+
+     <CheckBox
+        android:id="@+id/q44"
+        android:layout_width="273dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="Business functions(Word,Excel,etc.)" />
+
+     <CheckBox
+        android:id="@+id/q45"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="GPS functions" />
+
+     <CheckBox
+        android:id="@+id/q46"
+        android:layout_width="276dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="Data functions(Bluetooth,WLAN,etc.)" />
+
+     <CheckBox
+        android:id="@+id/q47"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:buttonTint="#009688"
+        android:text="Others" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_q4"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:background="#009688"
+        android:text="Next"
+        android:textSize="30sp" />
     <!-- END    : Your code should be within this block -->
 
 </LinearLayout>
+

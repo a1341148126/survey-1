@@ -5,6 +5,122 @@
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="143dp"
+        android:layout_height="41dp"
+        android:text="       " />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="187dp"
+        android:layout_height="51dp"
+        android:text="  Question 8"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:text="     Which brand of phone will you choose if you are going to buy a new one?"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/q8"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/q81"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:buttonTint="#009688"
+            android:text="Iphone" />
+        <RadioButton
+            android:id="@+id/q82"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:text="Nokia"
+            android:buttonTint="#009688" />
+        <RadioButton
+            android:id="@+id/q83"
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:text="Samsung"
+            android:buttonTint="#009688" />
+        <RadioButton
+            android:id="@+id/q84"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:buttonTint="#009688"
+            android:text="Mi" />
+        <RadioButton
+            android:id="@+id/q85"
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:buttonTint="#009688"
+            android:text="Lenovo" />
+        <RadioButton
+            android:id="@+id/q86"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:buttonTint="#009688"
+            android:text="Sony" />
+        <RadioButton
+            android:id="@+id/q87"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:buttonTint="#009688"
+            android:text="Others" />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_q8"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:background="#009688"
+        android:text="Next"
+        android:textSize="30sp" />
 
 
     <!-- END    : Your code should be within this block -->
