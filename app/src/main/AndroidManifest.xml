@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Report"></activity>
+        <activity android:name=".Question_five"></activity>
+        <activity android:name=".Report" />
         <activity android:name=".Finish" />
         <activity android:name=".Question_twelve" />
         <activity android:name=".Question_eleven" />
@@ -18,7 +19,6 @@
         <activity android:name=".Question_eight" />
         <activity android:name=".Question_seven" />
         <activity android:name=".Question_six" />
-        <activity android:name=".Question_five" />
         <activity android:name=".Question_four" />
         <activity android:name=".Question_three" />
         <activity android:name=".Question_two" />
