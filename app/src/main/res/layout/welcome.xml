@@ -84,20 +84,22 @@
         android:textSize="18sp"
         android:visibility="visible" />
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
     <Button
         android:id="@+id/button_start"
-        android:layout_width="338dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="78dp"
+        android:layout_marginHorizontal="10dp"
         android:background="#009688"
         android:text="Let's start!"
-        android:textSize="24sp" />
-
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        />
+    </LinearLayout>
 
     <!-- END    : Your code should be within this block -->
 </RelativeLayout>

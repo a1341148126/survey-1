@@ -5,6 +5,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -32,7 +33,7 @@ import java.io.OutputStream;
 import java.io.RandomAccessFile;
 
 public class Report extends AppCompatActivity {
-private TextView report_finish;
+    private TextView report_finish;
     private TextView report2;
     private TextView report3;
     private TextView report4;
@@ -44,11 +45,12 @@ private TextView report_finish;
     private TextView report10;
     private TextView report11;
     private TextView report12;
-    private Button  btn_save;
+    private Button btn_save;
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
     private static String[] PERMISSIONS_STORAGE = {
             "android.permission.READ_EXTERNAL_STORAGE",
-            "android.permission.WRITE_EXTERNAL_STORAGE" };
+            "android.permission.WRITE_EXTERNAL_STORAGE"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,10 +108,12 @@ private TextView report_finish;
         msg += "\"Q12\":\"" + bundle.getString("Q12") + "\"}";
         saveToFile(msg);
 
-   }
+    }
 
 
     public void saveToFile(String msg) {
+
+        /*
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_UNMOUNTED)) {
             Toast.makeText(this, "No external storage", Toast.LENGTH_SHORT).show();
         } else {
@@ -135,9 +139,39 @@ private TextView report_finish;
                 e.printStackTrace();
             }
         }
+        }
+         */
 
-
-
+        // save file in storage/emulated/0/Android/data/packagename/files
+        Context context = this;
+        String pathex = context.getExternalFilesDir(null).getAbsolutePath();
+        File savedataex = new File(pathex, "results.json");
+        try {
+            FileOutputStream foutex = new FileOutputStream(savedataex, true);
+            try {
+                foutex.write(msg.getBytes());
+                foutex.flush();
+                foutex.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
 
+        // save file in data/data/packagename/files
+        //File pathin=getFilesDir();
+        try {
+            FileOutputStream foutin = this.openFileOutput("results.json", MODE_PRIVATE);
+            foutin.write(msg.getBytes());
+            foutin.flush();
+            foutin.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
+

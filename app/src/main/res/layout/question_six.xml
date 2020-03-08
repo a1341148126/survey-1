@@ -35,19 +35,21 @@
         android:text=""
         android:textColorLink="#009688" />
 
-    <Button
-        android:id="@+id/btn_q6"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="250dp"
-        android:background="#009688"
-        android:text="Next"
-        android:textSize="30sp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_q6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#009688"
+            android:text="Next"
+            android:textSize="30sp"
+            android:layout_marginHorizontal="10dp" />
+    </LinearLayout>
     <!-- END    : Your code should be within this block -->
 
 </LinearLayout>
